@@ -1,12 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lescoursdusoir</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Arapey&family=Inria+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello AAA !!</h1>
+    <header>
+        <nav class="nav1">
+            <div class="toggle">
+                <i class="fa-solid fa-bars open"></i>
+                <i class="fa-solid fa-xmark close"></i>
+            </div>
+            <div class="menu">
+                <div class="menu_left">
+                    <div class="menu_left_inner">
+                        <div class="menu-left_inner_item">
+                            <a href="#">ACUEIL <span class="menu-left_inner_item_small">#01</span></a>
+                        </div>
+                        <div class="menu-left_inner_item">
+                            <a href="#">OEUVRES <span class="menu-left_inner_item_small">#02</span></a>
+                        </div>
+                        <div class="menu-left_inner_item">
+                            <a href="#">BOUTIQUE <span class="menu-left_inner_item_small">#03</span></a>
+                        </div>
+                        <div class="menu-left_inner_item">
+                            <a href="#">CONTACT <span class="menu-left_inner_item_small">#04</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_right">
+                    <div class="menu_right_inner">
+                        <div class="menu_right_inner_item">
+                            <div class="menu_right_inner_item_title">CONTACT</div>
+                            <ul>
+                                <li>
+                                    <a href="mailto: nor@norbouchetara.com">nor@norbouchetara.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu_right_inner_item">
+                            <div class="menu_right_inner_item_title">Réseaux Sociaux</div>
+                            <ul>
+                                <li>
+                                    <a href="#">Facebook</a>
+                                </li>
+                                <li>
+                                    <a href="#">Instagram</a>
+                                </li>
+                                <li>
+                                    <a href="#">Youtube</a>
+                                </li>
+                                <li>
+                                    <a href="#">Twitter</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="sep"></div>
+                <div class="sep_icon">#128BPM</div>
+            </div>
+
+        </nav>
+
+    </header>
+    <section class="hero">
+        <img src="/menu/img/" alt="">
+    </section>
+
+    <script type="module">
+        
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-analytics.js";
+       
+        const firebaseConfig = {
+          apiKey: "AIzaSyAVIqfsjwTwwmrfQRCWVIbHiUSYn0pxS60",
+          authDomain: "les-cours-du-soir.firebaseapp.com",
+          projectId: "les-cours-du-soir",
+          storageBucket: "les-cours-du-soir.appspot.com",
+          messagingSenderId: "416827163974",
+          appId: "1:416827163974:web:e9ef827d8a58d11587d147",
+          measurementId: "G-YHGJPWG5X1"
+        };
+      
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
 </body>
 </html>
